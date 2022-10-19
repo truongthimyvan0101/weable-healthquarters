@@ -780,6 +780,7 @@ https://codepen.io/suez/pen/JoWKKX
   }
   /* Css w-blog */
   .w-blog{
+    padding: 1rem;
     margin: 0 !important;
   }
   .w-blog .located{
@@ -796,6 +797,13 @@ https://codepen.io/suez/pen/JoWKKX
   }
   .located .contact .phone i {
     font-size: 1.2rem;
+  }
+  /* *** Css .w-image */
+  .w-image a {
+    padding-right: 0.5rem;
+  }
+  .w-image .image-one{
+    padding-left: 1rem !important;
   }
   /* css footer */
   .w-footer .footer{
