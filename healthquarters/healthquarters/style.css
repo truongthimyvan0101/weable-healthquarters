@@ -95,12 +95,13 @@
     margin-left: 1rem;
 }
 .w-header .navbar .list-item .item-nav .btn{
-    color: #0b2e59;
-    border-color: #0b2e59;
-    background-color: #fff;
+    
     font-weight: 600;
     border-radius: 2.25rem;
     padding: 0.5rem 2rem;
+    color: #fff;
+    background-color: #0b2e59;
+    border-color: #0b2e59;
 }
 .w-header .navbar .list-item .dropdown .dropdown-menu{
     min-width: 7rem;
@@ -110,9 +111,9 @@
     color: #c25a3f;
 }
 .w-header .navbar .list-item .item-nav .btn:hover {
-    color: #fff;
-    background-color: #0b2e59;
-    border-color: #0b2e59;
+  color: #0b2e59;
+  border-color: #0b2e59;
+  background-color: #fff;
 }
 /* CSS w-design */
 .scene .page .left{
@@ -174,6 +175,9 @@
 /* ---css main */
 .main{
   background-image: linear-gradient(270deg, rgba(163, 209, 218, 0.84) 35%, hsla(0, 0%, 100%, 0)), url(https://assets-global.website-files.com/5fe9aa9…/5fe9aa9…_Texture%206%201.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: repeat, no-repeat;
   color: #0b2e59;
 }
 .w-blog{
@@ -191,6 +195,7 @@
     font-size: 1.2rem;
     line-height: 2.5rem;
     max-width:80%;
+    font-weight: 300 !important;
 } 
 .w-blog .located .contact{
   max-width: 15%;
@@ -230,6 +235,7 @@
 }
 .w-image .image-one{
   max-width: 70%!important;
+  position: relative;
 }
 .w-image .image-two{
   max-width: 25%!important;
@@ -241,7 +247,21 @@
   max-width: 100%;
   height: 100%;
   object-fit: cover;
- 
+}
+.w-image .image-one .bi-play-btn-fill{
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  transform: translate(-70%, -50%);
+  color: #fff;
+  font-size: 5rem;
+}
+.w-image .image-one h4{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  color: #fff;
 }
 .fancybox__backdrop::after {
   content: "";
@@ -318,6 +338,156 @@
 
 .is-nav-selected .fancybox__thumb::after {
   display: none;
+}
+/* *** css w-health-care */
+/* css bên trái */
+.w-health-care .examination-service{
+  border-right: 2px solid #c25a3f;
+  padding-right: 1.5rem;
+}
+.w-health-care .examination-service .service{
+  display: grid;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+.w-health-care .examination-service .img-wrap{
+  margin: 2rem 0.5rem 3rem;
+}
+.w-health-care .examination-service .service .list-service{
+  grid-column-gap: 16px;
+}
+.w-health-care .examination-service .service .list-service .note {
+  width: 50%;
+  text-decoration: none;
+}
+.w-health-care .examination-service .service .list-service .note img{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.w-health-care .examination-service .note-list{
+  display: block;
+  text-decoration: none;
+}
+.w-health-care .examination-service .note-list:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+.w-health-care .examination-service .note-list img{
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.w-health-care .examination-service .note-list h5,
+.w-health-care .examination-service .service .list-service .note h5{
+  color: #0B2E59;
+  font-weight: bold;
+}
+.w-health-care .examination-service .note-list p,
+.w-health-care .examination-service .service .list-service .note p{
+  color: #0B2E59;
+  width: 100%;
+  font-weight: 300 !important;
+}
+.w-health-care .examination-service .service .list-service .note:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+/* ** CSS .w-health-care bên phải** */
+.w-health-care .search h2{
+  font-family: 'Hatton', sans-serif;
+  font-size: 2.6rem;
+}
+.w-health-care .search p{
+  color: #0B2E59;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  width: 75%;
+  font-weight: 300 !important;
+}
+.w-health-care .brand .brand-item{
+  text-decoration: none;
+  display: block;
+}
+.w-health-care .brand .brand-item:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+.w-health-care .brand a h5{
+  font-size: 1.2rem;
+  color: #0B2E59;
+}
+/* CSS .w-health-care nút button  */
+.w-health-care .button{
+  margin-bottom: 5rem;
+}
+.w-health-care .button a{
+  background-color: #0B2E59;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 35px;
+}
+.w-health-care .button a:hover{
+  background-color: rgba(197, 214, 218, 0.84);
+  color: #0B2E59;
+}
+/* **CSS W-author** */
+.w-author .content{
+  color: #0B2E59;
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: rgba(157, 208, 217, 0.82);
+}
+.w-author .content h2{
+  font-family: 'Hatton', sans-serif;
+  font-weight: 400 !important;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+.w-author .content h5{
+  font-family: 'Hatton', sans-serif;
+  margin-bottom: 21px;
+  font-size: 24px;
+  line-height: 1.4em;
+}
+.w-author .content p{
+  margin-bottom: 0px;
+  font-size: 17px;
+  font-weight: 300 !important;
+}
+.w-author .content .img-wrap{
+  position: relative;
+}
+.w-author .content .img-wrap .logo img{
+  height: 50%;
+  width: 10%;
+  border-radius: 50%;
+}
+.w-author .content .img-wrap .logo{
+  display: none !important;
+  position: absolute;
+  left: 0;
+  left: 0;
+  bottom: -50%;
+  z-index: 99;
+}
+.w-author .content:hover .img-wrap .logo{
+  display: flex !important;
+  left: 5%;
+  bottom: 5%;
+}
+.w-author .content:hover .img-wrap .team p{
+  color: white;
+  font-weight: 600 !important;
+  margin-bottom: 0;
+}
+.w-author .content:hover .img-wrap .overlay{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 4%;
+  bottom: 0%;
+  z-index: 1;
+  background-image: linear-gradient(0deg, #0B2E59, hsla(0, 0%, 100%, 0) 54%);
 }
 /* --css footer */
 .w-footer .footer{
@@ -799,11 +969,39 @@ https://codepen.io/suez/pen/JoWKKX
     font-size: 1.2rem;
   }
   /* *** Css .w-image */
+  .w-image .content{
+    flex-direction: column;
+  }
   .w-image a {
     padding-right: 0.5rem;
   }
-  .w-image .image-one{
+  .w-image .image-one,
+  .w-image .image-two,
+  .w-image .image-three {
+    max-width: 100%!important;
     padding-left: 1rem !important;
+    padding-top: 1rem;
+  }
+  .w-image .image-one .bi-play-btn-fill {
+    font-size: 2rem;
+  }
+  .w-image .image-one h4 {
+    position: absolute;
+    top: 81%;
+    left: 15%;
+    transform: translate(0, 0);
+  }
+  /* ** css .w-health-care */
+  .w-health-care .search h2 {
+    font-size: 2rem;
+  }
+  .w-health-care .search p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  /* ** CSS .w-author */
+  .w-author .content p{
+    padding-bottom: 1rem;
   }
   /* css footer */
   .w-footer .footer{
